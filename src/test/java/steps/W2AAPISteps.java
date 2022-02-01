@@ -16,6 +16,7 @@ public class W2AAPISteps {
     public void sendGetRequestForUser(String userId){
         response = SerenityRest.given().when().get(userId);
         response.prettyPrint();
+        //new code for test
     }
 
     @Step("Send post request for user creating with email: {0}, firstname {1} and lastname {2}")
